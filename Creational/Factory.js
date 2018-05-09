@@ -72,7 +72,7 @@ const factory = new BallFactory();
 const myFootball = factory.createBall('football');
 const myBasketBall = factory.createBall('basketball');
 
-console.log(myFootball.roll); // The ootball is rolling.
-console.log(myBasketBall.roll); // The basketball is rolling.
-console.log(myFootball.kick); // You kicked the football.
-console.log(myBasketBall.kick); // You kicked the basketball.
+console.log(myFootball.roll()); // The football is rolling.
+console.log(myBasketBall.roll()); // The basketball is rolling.
+console.log(myFootball.kick()); // You kicked the football.
+console.log(myBasketBall.bounce()); // You bounced the basketball.
