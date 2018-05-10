@@ -4,7 +4,7 @@
 	Constructor pattern is the most commonly used pattern in JavaScript for creating new objects of similiar kind.
 */
 
-// ES5 syntax
+// traditional Function-based syntax
 function Hero(name, specialAbility) {
 	// setting property values
 	this.name = name;
@@ -16,7 +16,7 @@ function Hero(name, specialAbility) {
 	};
 }
 
-// ES6 Class based syntax
+// ES6 Class syntax
 class Hero {
 	constructor(name, specialAbility) {
 		// setting property values

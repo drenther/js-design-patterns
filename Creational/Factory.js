@@ -4,37 +4,7 @@
     This pattern is frequently used when we need to manage or manipulate collections of objects that are different yet have many similiar characteristics.
 */
 
-// ES5
-function BallFactory() {
-	this.createBall = function(type) {
-		var ball;
-
-		if (type === 'football' || type === 'soccer') ball = new FootBall();
-		else if (type === 'basketball') ball = new BasketBall();
-
-		ball.roll = function() {
-			console.log('The ' + this.type + ' is rolling.');
-		};
-	};
-}
-
-function FootBall() {
-	this.type = 'Football';
-
-	this.kick = function() {
-		console.log('You kicked the football.');
-	};
-}
-
-function BasketBall() {
-	this.type = 'BasketBall';
-
-	this.bounce = function() {
-		console.log('You bounced the basketball.');
-	};
-}
-
-// ES6
+// ES6 Class syntax
 class BallFactory {
 	constructor() {
 		this.createBall = function(type) {
@@ -66,7 +36,7 @@ class BasketBall {
 	}
 }
 
-// usage
+// creating objects
 const factory = new BallFactory();
 
 const myFootball = factory.createBall('football');
