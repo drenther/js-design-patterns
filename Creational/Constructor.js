@@ -33,8 +33,10 @@ class Hero {
 }
 
 // creating new instances of Hero
+/*
 const IronMan = new Hero('Iron Man', 'fly');
 
 console.log(IronMan.getDetails()); // Iron Man can fly
+*/
 
-export default Hero;
+module.exports = Hero;

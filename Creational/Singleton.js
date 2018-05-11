@@ -1,10 +1,9 @@
 /*
 	Singleton is a special creational design pattern where only one instance of a class can exist. It works like this - if no instance of the singleton class exists then a new instance is created and returned but if an instance already exists then the reference to the existing instance is returned.
 
-	In real-life example, mongoose (the famous Node.js ODM library for MongoDB) utilizes the singleton pattern.
+	A perfect real-life example would be that of mongoose (the famous Node.js ODM library for MongoDB). It utilizes the singleton pattern.
 */
 
-// ES6 Class syntax
 class Database {
 	constructor(data) {
 		if (Database.exists) {
@@ -26,8 +25,12 @@ class Database {
 }
 
 // usage
+/*
 const mongo = new Database('mongo');
 console.log(mongo.getData()); // mongo
 
 const mysql = new Database('mysql');
 console.log(mysql.getData()); // mongo
+*/
+
+module.exports = Database;
