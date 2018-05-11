@@ -12,7 +12,7 @@ class BallFactory {
 			if (type === 'football' || type === 'soccer') ball = new Football();
 			else if (type === 'basketball') ball = new Basketball();
 			ball.roll = function() {
-				console.log(`The ${this.type} is rolling.`);
+				console.log(`The ${this._type} is rolling.`);
 			};
 		};
 	}
@@ -20,7 +20,7 @@ class BallFactory {
 
 class Football {
 	constructor() {
-		this.type = 'football';
+		this._type = 'football';
 		this.kick = function() {
 			console.log('You kicked the football.');
 		};
@@ -29,7 +29,7 @@ class Football {
 
 class Basketball {
 	constructor() {
-		this.type = 'basketball';
+		this._type = 'basketball';
 		this.bounce = function() {
 			console.log('You bounced the basketball.');
 		};

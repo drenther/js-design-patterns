@@ -10,18 +10,18 @@ class Database {
 		if (Database.exists) {
 			return Database.instance;
 		}
-		this.data = data;
+		this._data = data;
 		Database.instance = this;
 		Database.exists = true;
 		return this;
 	}
 
 	getData() {
-		return this.data;
+		return this._data;
 	}
 
 	setData(data) {
-		this.data = data;
+		this._data = data;
 	}
 }
 

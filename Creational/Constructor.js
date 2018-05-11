@@ -22,12 +22,12 @@ function Hero(name, specialAbility) {
 class Hero {
 	constructor(name, specialAbility) {
 		// setting property values
-		this.name = name;
-		this.specialAbility = specialAbility;
+		this._name = name;
+		this._specialAbility = specialAbility;
 
 		// declaring a method on the object
 		this.getDetails = function() {
-			return `${this.name} can ${this.specialAbility}`;
+			return `${this._name} can ${this._specialAbility}`;
 		};
 	}
 }
