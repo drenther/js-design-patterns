@@ -5,7 +5,8 @@
 */
 
 // traditional Function-based syntax
-function HeroES5(name, specialAbility) {
+/*
+function Hero(name, specialAbility) {
 	// setting property values
 	this.name = name;
 	this.specialAbility = specialAbility;
@@ -15,6 +16,7 @@ function HeroES5(name, specialAbility) {
 		return this.name + ' can ' + this.specialAbility;
 	};
 }
+*/
 
 // ES6 Class syntax
 class Hero {
