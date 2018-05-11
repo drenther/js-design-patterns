@@ -1,0 +1,23 @@
+{
+	"name": "js-design-patterns",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/drenther/js-design-patterns.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/drenther/js-design-patterns/issues"
+	},
+	"homepage": "https://github.com/drenther/js-design-patterns#readme",
+	"devDependencies": {
+		"jest": "^22.4.3"
+	}
+}

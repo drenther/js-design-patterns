@@ -5,7 +5,7 @@
 */
 
 // traditional Function-based syntax
-function Hero(name, specialAbility) {
+function HeroES5(name, specialAbility) {
 	// setting property values
 	this.name = name;
 	this.specialAbility = specialAbility;
@@ -34,3 +34,5 @@ class Hero {
 const IronMan = new Hero('Iron Man', 'fly');
 
 console.log(IronMan.getDetails()); // Iron Man can fly
+
+export default Hero;
