@@ -1,4 +1,4 @@
-const { CumulativeSum } = require('../ChainOfResponsibility');
+const CumulativeSum = require('../ChainOfResponsibility');
 
 describe('Chain of Responsibility Pattern Tests', function() {
 	it('is chain working with zero initial', function() {
