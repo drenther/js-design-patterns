@@ -3,6 +3,7 @@
 
 	A good example of the chain of responsibility pattern is the event bubbling in DOM in which an event propagates through a series of nested DOM elements, one of which may have an "eventlistener" attached to listen and act on the event.
 */
+
 class CumulativeSum {
 	constructor(intialValue = 0) {
 		this.sum = intialValue;
