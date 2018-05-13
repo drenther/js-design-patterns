@@ -10,9 +10,6 @@ describe('Mediator Pattern Tests', function() {
 		});
 
 		const expectedCoordinates = [[20, 30], [10, 30], [10, 20]];
-		let i = 0;
-		airplanes.map(airplane => airplane.requestCoordinates()).forEach(setOfCoordinates => {
-			expect(setOfCoordinates).toEqual(expectedCoordinates[i++]);
-		});
+		expect(airplanes.map(airplane => airplane.requestCoordinates())).toEqual(expectedCoordinates);
 	});
 });
