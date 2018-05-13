@@ -7,8 +7,8 @@ describe('Template Design Pattern Tests', function() {
 		expect(dev.work()).toEqual('Nathan handles application development');
 	});
 	it('should work for tester', function() {
-		const dev = new Tester('Brian', 90000);
-		expect(dev.getPaid()).toEqual('Brian got paid 90000');
-		expect(dev.work()).toEqual('Brian handles testing');
+		const tester = new Tester('Brian', 90000);
+		expect(tester.getPaid()).toEqual('Brian got paid 90000');
+		expect(tester.work()).toEqual('Brian handles testing');
 	});
 });
