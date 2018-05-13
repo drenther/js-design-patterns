@@ -1,6 +1,6 @@
 const TrafficLight = require('../State');
 
-describe('', function() {
+describe('State Design Pattern Tests', function() {
 	it('should work for all lights', function() {
 		const trafficLight = new TrafficLight();
 
