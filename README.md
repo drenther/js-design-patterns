@@ -1,6 +1,6 @@
 # Design Patterns with modern JavaScript
 
-This is a companion repository of the medium article - [JS Design Pattern](https://medium.com/beginners-guide-to-mobile-web-development/javascript-design-patterns-25f0faaaa15)
+This is the companion repository of the article on [JavaScript Design Patterns](https://able.bio/drenther/javascript-design-patterns--89mv2af)
 
 # Table of Contents
 
