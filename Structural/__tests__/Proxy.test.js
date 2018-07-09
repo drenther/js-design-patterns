@@ -1,14 +1,12 @@
-const { addToImageCache, ProxyImage } = require('../Proxy');
+const { addToImageCache, proxiedNetworkFetch } = require('../Proxy');
 
 describe('Proxy Design Pattern Tests', function() {
-	it('should respond with target class loadImage', function() {
-		const real = new ProxyImage('testImage.jpeg');
+  it('should return from network', function() {
+    expect(proxiedNetworkFetch('catPic.jpg')).toEqual('catPic.jpg - Response from network');
+  });
 
-		expect(real.loadImage()).toEqual('testImage.jpeg from network');
-	});
-	it('should respond with proxy class loadImage', function() {
-		const cached = new ProxyImage('testImage.jpeg');
-
-		expect(cached.loadImage()).toEqual('testImage.jpeg from cache');
-	});
+  it('should return from cache', function() {
+    expect(proxiedNetworkFetch('dogPic.jpg')).toEqual('dogPic.jpg - Response from network');
+    expect(proxiedNetworkFetch('dogPic.jpg')).toEqual('dogPic.jpg - Response from cache');
+  });
 });
